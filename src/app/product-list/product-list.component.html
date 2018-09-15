@@ -1,0 +1,9 @@
+<p>
+  {{ title }}
+</p>
+
+<div class="products-class">
+  <div class="product-item" *ngFor="let product of products">
+    <app-product-item [prd]="product"></app-product-item>
+  </div>
+</div>

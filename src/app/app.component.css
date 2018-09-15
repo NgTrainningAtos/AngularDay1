@@ -1,0 +1,8 @@
+app-appmenu ul {
+  display: block;
+  border: 1px solid #000000;
+}
+app-appmenu ul li {
+  display: inline-block;
+  padding: 10px 10px;
+}
