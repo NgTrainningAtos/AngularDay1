@@ -1,0 +1,5 @@
+<div>SKU #{{ reference }}</div>
+<div>{{ nom }}</div>
+<span *ngFor="let cat of category; let i=index">
+    {{ cat }} <span *ngIf="i < category.length -1 ">></span>
+</span>

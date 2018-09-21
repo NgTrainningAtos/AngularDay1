@@ -1,6 +1,6 @@
 <app-appmenu></app-appmenu>
 <app-breadcrumbs></app-breadcrumbs>
 <div class="inventory-app">
-  <app-product-list [products]="productList">
+  <app-product-list [products]="productList" (ProductSelect)="addToCart($event)">
   </app-product-list>
 </div>

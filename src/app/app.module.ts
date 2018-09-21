@@ -7,6 +7,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductImgComponent } from './product-img/product-img.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductPriceComponent } from './product-price/product-price.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ProductImgComponent } from './product-img/product-img.component';
     BreadcrumbsComponent,
     ProductListComponent,
     ProductItemComponent,
-    ProductImgComponent
+    ProductImgComponent,
+    ProductDetailsComponent,
+    ProductPriceComponent
   ],
   imports: [
     BrowserModule

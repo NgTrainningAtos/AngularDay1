@@ -1,27 +1,24 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-product-img',
   templateUrl: './product-img.component.html',
   styleUrls: ['./product-img.component.css']
 })
-export class ProductImgComponent implements OnInit {
+export class ProductImgComponent implements OnChanges {
   @Input()
   imageUrl: string;
   @Input()
   taille: string;
   localTaille: string;
-  constructor() {
-    console.log(this.taille);
-  }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnChanges() {
     this.localTaille = this.taille;
   }
 
   getWidth() {
-    console.log('get Width', this.taille);
-    switch ('medium') {
+    switch (this.localTaille) {
       case 'small':
         return '50px';
         break;
